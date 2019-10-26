@@ -50,7 +50,6 @@ lsd_slam
 │   │   ├── pinhole_ardrone_calib.cfg (new)
 │   |   ├── ...
 ├── ...
-
 ````
 ---
 
@@ -82,19 +81,8 @@ orb_slam2
 │   │   ├── ...
 │   │   ├── EuRoC_Time_Stamples
 │   │   |   ├── ardrone.txt (new)
-
 ````
 
-The created custom dataset should look like this:
-````
-YOURDATASET
-├── data.csv
-├── data
-│   ├── 000001.png
-│   ├── 000002.png
-│   ├── 000003.png
-│   ├── ...
-````
 ---
 
 ### [LDSO](https://github.com/tum-vision/LDSO) 
