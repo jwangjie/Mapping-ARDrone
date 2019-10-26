@@ -1,7 +1,5 @@
 ## Implementing LSD-SLAM, ORB-SLAM2, and LDSO with a custom dataset
 
-This is the complementary materials of paper [The Mapping Quality Evaluation of Monocular SLAM Solutions for Micro Aerial Vehicles](http://jiewang.name/publications/slam2019). 
-
 There many existing visual SLAM benchmark datasets (e.g., EuRoC, TUM, and KITTI) to implement tests of SLAM algorithms. 
 However, other than the above three popular datasets, implementing SLAM algorithms with a custom dataset needs some configuration work. LSD-SLAM, ORB-SLAM2, and LDSO are modified as follows to run with a custom image dataset created from videos collect by flying an AR. Drone 2.0. 
 
