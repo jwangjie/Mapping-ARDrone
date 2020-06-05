@@ -1,5 +1,11 @@
 ## Implementing LSD-SLAM, ORB-SLAM2, and LDSO with a custom dataset
 
+### Implementation instructions of paper "Mapping Quality Evaluation of Monocular SLAM Solutions for Micro Aerial Vehicles". 
+
+[[Implementation]](http://jiewang.name/publications/slam2019)
+[[Video]](http://jiewang.name/files/slam2019.gif)
+[[Paper]](https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-2-W17/413/2019/)
+
 There many existing visual SLAM benchmark datasets (e.g., EuRoC, TUM, and KITTI) to implement tests of SLAM algorithms. 
 However, other than the above three popular datasets, implementing SLAM algorithms with a custom dataset needs some configuration work. LSD-SLAM, ORB-SLAM2, and LDSO are modified as follows to run with a custom image dataset created from videos collect by flying an AR. Drone 2.0. 
 
@@ -101,4 +107,18 @@ Your custom image dataset should be created similar to the EuRoC dataset.
 2. Run LDSO  with the created dataset: `./bin/run_dso_euroc preset=0 files=/YOURDATASET`
    * When the package finished running, the generated points cloud map will be automatically saved as the `pointcloud.ply` 
    file after shutting down the `Pangolin` window. 
-   
+
+## Please cite this paper in your publications if it helps your research:
+```
+@article{wang2019mapping,
+  title={Mapping Quality Evaluation of Monocular SLAM Solutions for Micro Aerial Vehicles.},
+  author={Wang, J. and Shahbazi, M.},
+  journal={ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+  volume = {XLII-2/W17},
+  year={2019},
+  pages = {413--420},
+  URL = {https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-2-W17/413/2019/},
+  DOI = {10.5194/isprs-archives-XLII-2-W17-413-2019} 
+}
+
+```   
